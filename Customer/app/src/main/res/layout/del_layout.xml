@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/backgroundpng">
+  <EditText
+      android:layout_margin="50dp"
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:maxLines="1"
+      android:hint="请输入要删除客户的电话"
+      android:phoneNumber="true"
+      android:layout_marginLeft="20dp"
+      android:layout_marginRight="20dp"
+      android:id="@+id/del_type"/>
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:text="确定删除"
+        android:textSize="30dp"
+        android:background="@drawable/btn2_style"
+        android:id="@+id/del_btn"/>
+    <Button
+        android:layout_margin="20dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="我点错了，返回上层"
+        android:textSize="25dp"
+        android:background="@drawable/btn1_style"
+        android:layout_gravity="center"
+        android:id="@+id/wrong_chioce"/>
+</LinearLayout>

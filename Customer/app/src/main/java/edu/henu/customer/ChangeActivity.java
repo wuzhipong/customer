@@ -86,7 +86,7 @@ public class ChangeActivity extends AppCompatActivity {
                             final String type = cursor.getString(cursor.getColumnIndex("type"));
                             final String time = cursor.getString(cursor.getColumnIndex("time"));
                             String comment=cursor.getString(cursor.getColumnIndex("comment"));
-
+                           // Toast.makeText(ChangeActivity.this,comment,Toast.LENGTH_LONG).show();
                             //如果查询到数据则隐藏最上方输入框 显示结果
                             LinearLayout line1 = (LinearLayout) findViewById(R.id.find_line);
                             LinearLayout line2 = (LinearLayout) findViewById(R.id.change_line);
@@ -104,7 +104,7 @@ public class ChangeActivity extends AppCompatActivity {
                             Cname.setText(name);
                             Cphone.setText(phone.toCharArray(), 0, phone.length());
                             Cnum.setText((num + "").toCharArray(), 0, (num + "").length());
-                            Ccomment.setText(comment.toCharArray(),0,comment.length());
+                            Ccomment.setText((comment+"").toCharArray(),0,(comment+"").length());
                             if (type.equals("尼格尔")) {
                                 spinner.setSelection(1);
                             } else {
@@ -307,13 +307,10 @@ public class ChangeActivity extends AppCompatActivity {
                     final EditText Cnum = (EditText) findViewById(R.id.change_num);
                     final EditText Cphone = (EditText) findViewById(R.id.change_phone);
                     final EditText Ccomment = (EditText) findViewById(R.id.change_comment);
-                    if (comment==null){
-                        comment = "空";
-                    }
                     Cname.setText(name);
                     Cphone.setText(phone.toCharArray(), 0, phone.length());
                     Cnum.setText((num + "").toCharArray(), 0, (num + "").length());
-                    Ccomment.setText(comment.toCharArray(),0,comment.length());
+                    Ccomment.setText((comment+"").toCharArray(),0,(comment+"").length());
                     if (type.equals("尼格尔")) {
                         spinner.setSelection(1);
                     } else {

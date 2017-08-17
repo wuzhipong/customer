@@ -170,11 +170,14 @@ public class ChangeActivity extends AppCompatActivity {
                                         }else{
                                             if (Ccomment.getText().toString().equals("")){
                                                 typecomment="空";
+                                            }else{
+                                                typecomment=Ccomment.getText().toString();
                                             }
+
                                             values.put("phone", Cphone.getText().toString());
                                             values.put("num", Cnum.getText().toString());
                                             values.put("type", spinner.getSelectedItem().toString());
-                                            values.put("comment",typecomment);
+                                            values.put("comment","测试推动");
                                             //获取时间
                                             java.text.SimpleDateFormat format = new java.text.SimpleDateFormat("yyyy-MM-dd");
                                             final Date curDate = new Date(System.currentTimeMillis());
@@ -369,6 +372,8 @@ public class ChangeActivity extends AppCompatActivity {
                             }else{
                                 if (Ccomment.getText().toString().equals("")){
                                     typecomment="空";
+                                }else{
+                                    typecomment=Ccomment.getText().toString();
                                 }
                                 values.put("phone", Cphone.getText().toString());
                                 values.put("num", Cnum.getText().toString());
